@@ -17,6 +17,11 @@ function Home() {
             tipo={"grass"}
             imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
             />
+            <CardPokemon
+            nome={"bulbasauro"}
+            tipo={"grass"}
+            imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
+            />
         </div>
     )
 }
