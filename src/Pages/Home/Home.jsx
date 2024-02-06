@@ -13,14 +13,19 @@ function Home() {
         <div className="homePage">
             {/* <NavBar/> */}
             <CardPokemon
-            nome={"bulbasauro"}
-            tipo={"grass"}
-            imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
+                nome={"bulbasauro"}
+                tipo={"grass"}
+                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
             />
             <CardPokemon
-            nome={"bulbasauro"}
-            tipo={"grass"}
-            imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
+                nome={"Squirtle"}
+                tipo={"Woter"}
+                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"}
+            />
+            <CardPokemon
+                nome={"Charmander"}
+                tipo={"fire"}
+                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"}
             />
         </div>
     )

@@ -1,14 +1,21 @@
-import { Bug, Dark, Dragon, Eletric, Fairy, Figthing, Fire, Flying, Ghost,} from '../../assets'
+import Bug from '../../assets/Bug.png'
+import Dark from '../../assets/Dark.png'
+import Dragon from '../../assets/Dragon.png'
+import Eletric from '../../assets/Eletric.png'
+import Fairy from '../../assets/Fairy.png'
+import Figting from '../../assets/Figting.png'
+import Fire from '../../assets/Fire.png'
+import Flying from '../../assets/Flying.png'
+import Ghost from '../../assets/Ghost.png'
+import './Icons.css'
 
 export default function Icon(type) {
     const types = ["Normal", "Figthing", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water", "Grass", "Eletric", "Psychic", "Ice", "Dragon", "Dark", "Fairy"]
-    let image
-    const t = ".."
-    
-    types.map((x) => type == x? image = `../../assets/${x}.png`: console.log(x))
-    {console.log(image)}
-    
+    let icone
+
+    types.map((x) => type == x ? icone = `../../assets/${x}.png` : console.log(x))
+
     return (
-        <img src={image} className="icon"/>
+        <img src={Bug} className="icon" />
     )
 }
