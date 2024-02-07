@@ -25,7 +25,7 @@ function Home() {
             <CardPokemon
                 nome={"Charmander"}
                 tipo={"fire"}
-                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"}
+                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"}
             />
         </div>
     )
