@@ -6,10 +6,9 @@ import './CardPokemon.css'
 export default function CardPokemon(props) {
     return (
         <div className="cardPokemon">
-            {/* <IconGrass /> */}
+            <Icon type={props.tipo} />
             <img className="pokeImg" src={props.imagem} />
             <h1>{props.nome}</h1>
-            <Icon type={props.tipo} />
         </div>
     )
 }

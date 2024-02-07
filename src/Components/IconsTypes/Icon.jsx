@@ -18,11 +18,12 @@ import steel from '../../assets/Steel.png'
 import water from '../../assets/Water.png'
 import './Icons.css'
 
-export default function Icon(type) {
+export default function Icon(props) {
 
     console.log(dark);
+    console.log(props.type);
 
-    switch (type) {
+    switch (props.type) {
         case "bug":
             return (
                 <img src={bug} className="icon" />
@@ -38,6 +39,96 @@ export default function Icon(type) {
                 <img src={dragon} className="icon" />
             )
             break;
+        case "eletric":
+            return (
+                <img src={eletric} className="icon" />
+            )
+            break;
+        
+        case "fairy":
+            return (
+                <img src={fairy} className="icon" />
+            )
+            break;
+                
+        case "figthing":
+            return (
+                <img src={figthing} className="icon" />
+            )
+            break;
+            
+        case "fire":
+            return (
+                <img src={fire} className="icon" />
+            )
+            break;
+            
+        case "flying":
+            return (
+                <img src={flying} className="icon" />
+            )
+            break;
+            
+        case "ghost":
+            return (
+                <img src={ghost} className="icon" />
+            )
+            break;
+            
+        case "grass":
+            return (
+                <img src={grass} className="icon" />
+            )
+            break;
+            
+        case "ground":
+            return (
+                <img src={ground} className="icon" />
+            )
+            break;
+
+        case "ice":
+            return (
+                <img src={ice} className="icon" />
+            )
+            break;
+        
+        case "normal":
+            return (
+                <img src={normal} className="icon" />
+            )
+            break;
+
+        case "poison":
+            return (
+                <img src={poison} className="icon" />
+            )
+            break;
+
+        case "psychic":
+            return (
+                <img src={psychic} className="icon" />
+            )
+            break;
+
+        case "rock":
+            return (
+                <img src={rock} className="icon" />
+            )
+            break;
+        
+        case "steel":
+            return (
+                <img src={steel} className="icon" />
+            )
+            break;
+        
+        case "water":
+            return (
+                <img src={water} className="icon" />
+            )
+            break;
+                
         default:
             break;
     }

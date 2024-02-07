@@ -13,13 +13,13 @@ function Home() {
         <div className="homePage">
             {/* <NavBar/> */}
             <CardPokemon
-                nome={"bulbasauro"}
+                nome={"Bulbasauro"}
                 tipo={"grass"}
                 imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
             />
             <CardPokemon
                 nome={"Squirtle"}
-                tipo={"Woter"}
+                tipo={"water"}
                 imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"}
             />
             <CardPokemon
