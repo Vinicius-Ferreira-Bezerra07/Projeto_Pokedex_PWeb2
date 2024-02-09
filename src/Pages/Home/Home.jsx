@@ -1,38 +1,30 @@
-import CardPokemon from '../../Components/CardPokemon/CardPokemon';
-import { getAllPokemons } from '../../services/RequestsPokemons/Pokemons';
+import CardPokemons from '../../Components/CardPokemon/CardPokemons';
+import { getPokemons } from '../../services/RequestsPokemons/Pokemons';
 import './Home.css'
 import { useEffect, useState } from 'react';
+import  ClipLoader from "react-spinners/ClipLoader"
 
 function Home() {
     const [allPokemons, setAllPokemons] = useState([])
-    const [pokemons, setPokemons] = useState([])
+    const endpoint = 10
 
     useEffect(() => {
-        getAllPokemons()
+        getPokemons(endpoint, 1)
             .then(response => setAllPokemons(response))
             .catch(error => console.error(error))
     }, [])
-
-    console.log(allPokemons);
+    
+    // console.log(allPokemons);
 
     return (
         <div className="homePage">
-            {/* <NavBar/> */}
-            <CardPokemon
-                nome={"Bulbasauro"}
-                tipo={"grass"}
-                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"}
-            />
-            <CardPokemon
-                nome={"Squirtle"}
-                tipo={"water"}
-                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"}
-            />
-            <CardPokemon
-                nome={"Charmander"}
-                tipo={"fire"}
-                imagem={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"}
-            />
+            { allPokemons != undefined ?
+                <CardPokemons
+                    name={"venusaur"}
+                    // pokemons={allPokemons[1].name}
+                />
+            : <ClipLoader/>
+            }
         </div>
     )
 }
