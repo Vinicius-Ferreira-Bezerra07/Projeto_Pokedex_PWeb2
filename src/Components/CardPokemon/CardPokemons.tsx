@@ -15,12 +15,12 @@ export default function CardPokemon({name}) {
     }, [])
 
     // console.log(pokemon);
-    console.log(pokemon.types[0].tipe.name);
+    // console.log(pokemon.types[0].tipe.name);
     
     return (
         <>
             <div className="cardPokemon">
-                <Icon type={pokemon.types[0].tipe.nome} />
+                {/* <Icon type={pokemon.types[0].tipe.nome} /> */}
                 <img className="pokeImg" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"} />
                 <h1>{name}</h1>
             </div>
