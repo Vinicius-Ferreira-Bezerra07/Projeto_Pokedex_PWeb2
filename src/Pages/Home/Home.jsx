@@ -1,13 +1,19 @@
 import CardPokemon from '../../Components/CardPokemon/CardPokemon';
+import { getAllPokemons } from '../../services/RequestsPokemons/Pokemons';
 import './Home.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Home() {
+    const [allPokemons, setAllPokemons] = useState([])
     const [pokemons, setPokemons] = useState([])
 
-    // useState(){
-    //     setPokemons(busbarPokemon())
-    // } []
+    useEffect(() => {
+        getAllPokemons()
+            .then(response => setAllPokemons(response))
+            .catch(error => console.error(error))
+    }, [])
+
+    console.log(allPokemons);
 
     return (
         <div className="homePage">
