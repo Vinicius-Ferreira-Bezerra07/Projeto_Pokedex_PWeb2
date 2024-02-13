@@ -1,4 +1,4 @@
-.cardPokemon{
+.cardPokemon {
     padding: 10px;
     border: solid 1px red;
     width: 300px;
@@ -9,7 +9,8 @@
     align-items: center;
     justify-content: center;
 }
-.pokeImg{
+
+.pokeImg {
     background-color: transparent;
     height: 80%;
     width: 80%;
