@@ -1,4 +1,5 @@
 import CardPokemons from '../../Components/CardPokemon/CardPokemons';
+import NavBar from '../../Components/NavBar/NavBar'
 import { getAllPokemons, getPokemons } from '../../services/RequestsPokemons/Pokemons';
 import './Home.css'
 import { useEffect, useState } from 'react';
@@ -27,10 +28,11 @@ function Home() {
         // getPoke()
     }, [])
 
-    // console.log(allPokemons);
+    // console.log(allPokemons);    
 
     return (
         <div className="homePage">
+            <NavBar />
             {allPokemons.length > 0 ?
                 allPokemons.map(poke => (
                     <CardPokemons
