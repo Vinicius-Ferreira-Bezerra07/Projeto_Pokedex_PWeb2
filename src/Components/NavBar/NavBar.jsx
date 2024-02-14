@@ -3,14 +3,14 @@ export default function NavBar() {
     console.log("NavBar");
     return (
         <div className="navbar">
-            <ul className="middle-items">
-                <li className="list-item">
+            <ul className="midItems">
+                <li className="listItem">
                     {/* <Link to="/" className="link-light">
                         Home
                     </Link> */}
                     <h1>Home</h1>
                 </li>
-                <li className="list-item">
+                <li className="listItem">
                     {/* <Link to="/about" className="link-light">
                         About
                     </Link> */}
