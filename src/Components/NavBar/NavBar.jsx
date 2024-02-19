@@ -1,6 +1,6 @@
 import './navbar.css'
 export default function NavBar() {
-    console.log("NavBar");
+    
     return (
         <div className="navbar">
             <ul className="midItems">
