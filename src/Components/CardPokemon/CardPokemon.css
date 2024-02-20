@@ -1,8 +1,8 @@
 .cardPokemon {
-    padding: 10px;
+    padding: 0px 10px;
     border: solid 1px red;
     width: 280px;
-    height: 280px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
@@ -16,6 +16,17 @@
     width: 80%;
 }
 
-.pokeName {
-    
+.link {
+    text-decoration: none;
+}
+
+.pokeName{
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.icons{
+    align-self: flex-end;
+    padding-top: 10px;
 }

@@ -8,9 +8,12 @@ export default function CardPokemon({ name, type, img }) {
     console.log(img["official-artwork"]?.front_default);
     
     return (
-        <Link to={'/pokemon${}'}>
+        <Link className="link" to={'/pokemon${}'}>
             <div className="cardPokemon" >
-                <Icon type={type[0].type.name} />
+                <div className="icons">
+                    <Icon type={type[0].type.name} />
+                    <Icon type={type[1]?.type.name} />
+                </div>
                 <img className="pokeImg" src={img["official-artwork"]?.front_default} />
                 <h1 className="pokeName">{name}</h1>
             </div>
