@@ -17,7 +17,7 @@ export function getPokemons(limit, offset) {
 }
 
 export function getPokemonByID(id) {
-    return api.get(`/pokemon/${id}/`).then((response => response))
+    return api.get(`/pokemon/${id}/`).then((response => response.data))
 }
 
 export function getPokemonByName(name) {

@@ -7,14 +7,14 @@ import ClipLoader from "react-spinners/ClipLoader"
 
 function Home() {
     const [allPokemons, setAllPokemons] = useState([])
-    const endpoint = 151
+    const endpoint = 10
 
     const getPoke = async () => {
         // await getAllPokemons()
         //     .then(response => setAllPokemons(response))
         //     .catch(error => console.error(error))
 
-        getPokemons(endpoint, 1)
+        await getPokemons(endpoint, 1)
             .then(response => setAllPokemons(response))
             .catch(error => console.error(error))
     }
@@ -28,7 +28,7 @@ function Home() {
         getPoke()
     }, [])
 
-    console.log(allPokemons);    
+    // console.log(allPokemons);
 
     return (
         <div className="homePage">
@@ -37,6 +37,7 @@ function Home() {
                 allPokemons.map(poke => (
                     <CardPokemons
                         key={poke.order}
+                        id={poke.id}
                         name={poke.name}
                         type={poke.types}
                         img={poke.sprites.other}

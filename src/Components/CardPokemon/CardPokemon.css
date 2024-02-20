@@ -1,6 +1,6 @@
 .cardPokemon {
     padding: 0px 10px;
-    border: solid 1px red;
+    border: solid 1px aquamarine;
     width: 280px;
     height: 300px;
     display: flex;
@@ -20,13 +20,13 @@
     text-decoration: none;
 }
 
-.pokeName{
+.pokeName {
     color: black;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
 
-.icons{
+.icons {
     align-self: flex-end;
     padding-top: 10px;
 }
