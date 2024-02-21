@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader"
 
 function Home() {
     const [allPokemons, setAllPokemons] = useState([])
-    const endpoint = 10
+    const endpoint = 151
 
     const getPoke = async () => {
         // await getAllPokemons()
