@@ -1,7 +1,7 @@
 import bug from '../../assets/Bug.png'
 import dark from '../../assets/Dark.png'
 import dragon from '../../assets/Dragon.png'
-import eletric from '../../assets/Eletric.png'
+import electric from '../../assets/Eletric.png'
 import fairy from '../../assets/Fairy.png'
 import fighting from '../../assets/Fighting.png'
 import fire from '../../assets/Fire.png'
@@ -37,9 +37,9 @@ export default function Icon(props) {
                 <img src={dragon} className="icon" />
             )
             break;
-        case "eletric":
+        case "electric":
             return (
-                <img src={eletric} className="icon" />
+                <img src={electric} className="icon" />
             )
             break;
 
@@ -49,9 +49,9 @@ export default function Icon(props) {
             )
             break;
 
-        case "figthing":
+        case "fighting":
             return (
-                <img src={figthing} className="icon" />
+                <img src={fighting} className="icon" />
             )
             break;
 

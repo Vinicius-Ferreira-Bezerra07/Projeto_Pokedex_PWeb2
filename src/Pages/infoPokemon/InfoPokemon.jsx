@@ -15,7 +15,7 @@ export default function infoPokemon(props) {
             .catch(error => console.error(error))
     }, [])
 
-    console.log(pokemon)
+    console.log(pokemon?.moves[0].move.name)
 
     return (
         <>
@@ -25,10 +25,18 @@ export default function infoPokemon(props) {
                     <h1 className="pokeName" >{pokemon?.name}</h1>
                     <img className="pokeImg" src={pokemon?.sprites.other["official-artwork"].front_default} />
                     <div className="moves">
-
+                    
                     </div>
-                    <div className="">
+                    <div className="evolutions">
+                        <div className="firstEvolution">
+                            
+                        </div>
+                        <div className="secondEvolution">
 
+                        </div>
+                        <div className="thirdEvolution">
+
+                        </div>
                     </div>
 
                 </div>
