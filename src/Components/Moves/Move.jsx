@@ -1,10 +1,8 @@
-export default function Move({move}){
-
-    console.log(move);
+export default function Move({ move }) {
 
     return (
         <>
-            <p>{move.name}</p>
+            <p className="moveText">{move.move.name}</p>
         </>
     )
 }

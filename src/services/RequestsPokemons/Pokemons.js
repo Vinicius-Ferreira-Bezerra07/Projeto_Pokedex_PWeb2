@@ -27,3 +27,9 @@ export function getPokemonByName(name) {
 export function getMoves(props) {
     return axios.all(props.props.map(item => axios.get(item.move.url))).then(response => response)
 }
+
+export default function getSpecie(url) {
+    // https://pokeapi.co/api/v2/pokemon-species/5/
+    console.log(url.substring(45, 46));
+    // const idSpecie = url.substring(45,46)
+}

@@ -10,7 +10,7 @@ export default function CardPokemon({ id, name, type, img }) {
 
 
     return (
-        <Link className="link" to={`/pokemon/${id}`}>
+        <Link className="link" to={`/pokemon/${name}`}>
             <div className="cardPokemon" >
                 <div className="icons">
                     <Icon type={type[0].type.name} />

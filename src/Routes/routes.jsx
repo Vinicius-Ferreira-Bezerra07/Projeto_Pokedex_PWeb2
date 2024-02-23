@@ -7,7 +7,7 @@ export function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route exact path='/pokemon/:id' element={<InfoPokemon />} />
+                <Route exact path='/pokemon/:pokeName' element={<InfoPokemon />} />
             </Routes>
         </BrowserRouter>
     )
