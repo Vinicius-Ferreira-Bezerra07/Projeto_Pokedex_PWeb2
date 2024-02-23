@@ -3,6 +3,8 @@ import NavBar from "../../Components/NavBar/NavBar";
 import { useEffect, useState } from "react";
 import { getPokemonByID } from "../../services/RequestsPokemons/Pokemons";
 import ClipLoader from "react-spinners/ClipLoader"
+import Move from '../../Components/Moves/Move'
+import Evolutions from '../../Components/Evolutions/Evolutions'
 import './infoPokemon.css'
 
 export default function infoPokemon(props) {
@@ -15,7 +17,7 @@ export default function infoPokemon(props) {
             .catch(error => console.error(error))
     }, [])
 
-    console.log(pokemon?.moves[0].move.name)
+    // console.log(pokemon?.moves[0].move.name)
 
     return (
         <>
@@ -25,18 +27,12 @@ export default function infoPokemon(props) {
                     <h1 className="pokeName" >{pokemon?.name}</h1>
                     <img className="pokeImg" src={pokemon?.sprites.other["official-artwork"].front_default} />
                     <div className="moves">
-                    
+                        {pokemon?.moves.map(poke => (
+                            <Move move={poke}/>
+                        ))}
                     </div>
                     <div className="evolutions">
-                        <div className="firstEvolution">
-                            
-                        </div>
-                        <div className="secondEvolution">
-
-                        </div>
-                        <div className="thirdEvolution">
-
-                        </div>
+                        <Evolutions specie={pokemon?.species}/>
                     </div>
 
                 </div>
